@@ -11,20 +11,28 @@ public class Emotion {
 	public static final Emotion vulnerable = new Emotion("Vulnerable.");
 	public static final Emotion shy = new Emotion("Shy.");
 	
-	public static final Emotion anger = new Emotion("Anger.");
-	public static final Emotion sadness = new Emotion("Sadness.");
-	public static final Emotion fear = new Emotion("Anger.");
-	public static final Emotion depressed = new Emotion("Anger.");
-	public static final Emotion hatred = new Emotion("Anger.");
-	public static final Emotion desperate = new Emotion("Anger.");
-	public static final Emotion empty = new Emotion("Anger.");
-	public static final Emotion lost = new Emotion("Anger.");
+	public static final Emotion angry = new Emotion("Angry.");
+	public static final Emotion sad = new Emotion("Sad.");
+	public static final Emotion fear = new Emotion("Fear.");
+	public static final Emotion depressed = new Emotion("Depressed.");
+	public static final Emotion hatred = new Emotion("Hatred.");
+	public static final Emotion desperate = new Emotion("Desperate.");
+	public static final Emotion empty = new Emotion("Empty.");
+	public static final Emotion lost = new Emotion("Lost.");
 	
-	public static final Emotion happy = new Emotion("Anger.");
+	public static final Emotion happy = new Emotion("Happy.");
 	
 	private String name;
 	
 	public Emotion(String name){
+		this.setName(name);
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
 		this.name = name;
 	}
 
