@@ -25,7 +25,10 @@ public class Main extends AbstractMain {
 		this.setTitle("You Are Alone.");
 		this.setSize(InputHandler.screenSize);
 		this.setVisible(true);
-		dungeon = new Dungeon(1234);
+		InputHandler input = new InputHandler(this);
+		this.requestFocus();
+		Image img = this.createImage(4096, 4096);
+		dungeon = new Dungeon(845633, input, img);
 		State.state = State.STATE.DUNGEON;
 	}
 
